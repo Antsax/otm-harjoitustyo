@@ -6,4 +6,5 @@ Keväällä 2018 suoritetun **Ohjelmistotekniikan menetelmät** projektin dokume
 
 ### Viikko1
 [komentorivi.txt](https://github.com/Antsax/otm-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
+
 [gitlog.txt](https://github.com/Antsax/otm-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
