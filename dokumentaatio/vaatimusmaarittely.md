@@ -10,7 +10,7 @@ Pelaajalla on neljä eri mahdollisuutta liikkumiseen: hyppy, alas laskeutuminen,
 
 ![Image of Functionalities](https://github.com/Antsax/otm-harjoitustyo/blob/master/dokumentaatio/kuvat/settings.jpg)
 
-## Perusversion tarjoama mahdollisuus
+## Perusversion tarjoama toiminnallisuus
 
 ### Main menu
 
