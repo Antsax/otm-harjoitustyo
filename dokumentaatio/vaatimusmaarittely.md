@@ -16,7 +16,7 @@ Pelaajalla on neljä eri mahdollisuutta liikkumiseen: hyppy, alas laskeutuminen,
 
 ![Image of Main Menu](https://github.com/Antsax/otm-harjoitustyo/blob/master/dokumentaatio/kuvat/mainmenu.jpg)
 
-- Pelaaja näkee aloitusruudussa pelattavan hahmom (Derwin)
+- Pelaaja näkee aloitusruudussa pelattavan hahmon (Derwin)
 - Aloitusruudussa on napit pelin aloittamiseen ja pelistä poistumiseen sekä high score -lista
   - Start -nappia painamalla pelaaja viedään peliin
   - Exit -nappia painamalla tulee varmistusviesti, joka kysyy halutaanko sovellus varmasti sulkea. Myönteinen vastaus sulkee ohjelman, kielteinen sulkee viestin.
