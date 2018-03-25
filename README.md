@@ -19,4 +19,4 @@ Helsingin Yliopiston kev채채ll채 2018 toteutettu **Ohjelmistotekniikan menetelm�
 
 ## Dokumentaatio
 
-[Vaatimusm채채rittely](https://github.com/Antsax/otm-harjoitustyo/blob/master/dokumentaatio/vaatimusm채채rittely.md)
+[Vaatimusm채채rittely](https://github.com/Antsax/otm-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
