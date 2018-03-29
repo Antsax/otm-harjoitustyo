@@ -17,6 +17,18 @@ Helsingin Yliopiston keväällä 2018 toteutettu **Ohjelmistotekniikan menetelm�
 
 [testikattavuus.png](https://github.com/Antsax/otm-harjoitustyo/blob/master/laskarit/viikko2/testikattavuus.png)
 
+### Viikko3
+
+[Monopoli osa1](https://github.com/Antsax/otm-harjoitustyo/blob/master/laskarit/viikko3/tehtava1.jpg)
+
+[Monopoli osa2](https://github.com/Antsax/otm-harjoitustyo/blob/master/laskarit/viikko3/tehtava2.jpg)
+
+[Machine -sekvenssikaavio](https://github.com/Antsax/otm-harjoitustyo/blob/master/laskarit/viikko3/tehtava3.png)
+
+[HSL -sekvenssikaavio](https://github.com/Antsax/otm-harjoitustyo/blob/master/laskarit/viikko3/tehtava4.png)
+
 ## Dokumentaatio
 
 [Vaatimusmäärittely](https://github.com/Antsax/otm-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
+
+[Työaikakirjanpito](https://github.com/Antsax/otm-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md)
