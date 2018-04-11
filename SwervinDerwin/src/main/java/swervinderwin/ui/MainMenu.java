@@ -1,5 +1,7 @@
 package swervinderwin.ui;
 
+import java.awt.GraphicsDevice;
+import java.awt.GraphicsEnvironment;
 import java.util.Optional;
 import javafx.application.Application;
 import javafx.geometry.Pos;
@@ -27,16 +29,20 @@ import javafx.scene.text.FontWeight;
  * @author antsax
  */
 public class MainMenu extends Application {
+    
+    GraphicsDevice gd = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
+    int width = gd.getDisplayMode().getWidth();
+    int height = gd.getDisplayMode().getHeight();
 
     @Override
     public void start(Stage menu) {
         menu.setTitle("Swervin' Derwin!");
         Pane pane = new Pane();
-        pane.setPrefSize(1980, 1080);
-        Scene main = new Scene(pane, 1920, 1080, Color.BLACK);
-
+        pane.setPrefSize(width, height);
+        Scene main = new Scene(pane, width, height, Color.BLACK);
+        
         //face of Derwin
-        Rectangle eye1 = new Rectangle(30, 40, Color.BLACK);
+        Rectangle eye1 = new Rectangle(width/100, 40, Color.BLACK);
         Rectangle eye2 = new Rectangle(30, 40, Color.BLACK);
         Rectangle mouth = new Rectangle(120, 20, Color.BLACK);
         Rectangle mouthCheek1 = new Rectangle(15, 30, Color.BLACK);
