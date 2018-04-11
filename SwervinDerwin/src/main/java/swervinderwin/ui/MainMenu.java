@@ -11,6 +11,8 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.Region;
@@ -41,59 +43,14 @@ public class MainMenu extends Application {
         pane.setPrefSize(width, height);
         Scene main = new Scene(pane, width, height, Color.BLACK);
         
-        //face of Derwin
-        Rectangle eye1 = new Rectangle(width/100, 40, Color.BLACK);
-        Rectangle eye2 = new Rectangle(30, 40, Color.BLACK);
-        Rectangle mouth = new Rectangle(120, 20, Color.BLACK);
-        Rectangle mouthCheek1 = new Rectangle(15, 30, Color.BLACK);
-        Rectangle mouthCheek2 = new Rectangle(15, 30, Color.BLACK);
-
-        //body of Derwin
-        Rectangle hands = new Rectangle(700, 100, Color.WHITE);
-        Rectangle torso = new Rectangle(300, 100, Color.WHITE);
-        Rectangle leftArm = new Rectangle(100, 100, Color.WHITE);
-        Rectangle rightArm = new Rectangle(100, 100, Color.WHITE);
-        Rectangle leftLeg = new Rectangle(100, 200, Color.WHITE);
-        Rectangle rightLeg = new Rectangle(100, 200, Color.WHITE);
-        Rectangle rightFoot = new Rectangle(100, 100, Color.WHITE);
-        Rectangle leftFoot = new Rectangle(100, 100, Color.WHITE);
-        Rectangle flagPole = new Rectangle(10, 150, Color.WHITE);
-        Rectangle flag = new Rectangle(150, 100, Color.WHITE);
-
-        //position Derwin's face
-        eye1.setTranslateX(1020);
-        eye1.setTranslateY(300);
-        eye2.setTranslateX(930);
-        eye2.setTranslateY(300);
-        mouth.setTranslateX(930);
-        mouth.setTranslateY(400);
-        mouthCheek1.setTranslateX(930);
-        mouthCheek1.setTranslateY(370);
-        mouthCheek2.setTranslateX(1035);
-        mouthCheek2.setTranslateY(370);
-
-        //position Derwin's body
-        hands.setTranslateX(640);
-        hands.setTranslateY(270);
-        torso.setTranslateX(840);
-        torso.setTranslateY(370);
-        rightArm.setTranslateX(1240);
-        rightArm.setTranslateY(170);
-        leftArm.setTranslateX(640);
-        leftArm.setTranslateY(370);
-        leftLeg.setTranslateX(840);
-        leftLeg.setTranslateY(470);
-        rightLeg.setTranslateX(1040);
-        rightLeg.setTranslateY(470);
-        leftFoot.setTranslateX(740);
-        leftFoot.setTranslateY(570);
-        rightFoot.setTranslateX(1140);
-        rightFoot.setTranslateY(570);
-        flagPole.setTranslateX(1290);
-        flagPole.setTranslateY(20);
-        flag.setTranslateX(1300);
-        flag.setTranslateY(20);
-
+        //Derwin
+        Image image = new Image("File:derwinStill.png");
+        ImageView derwin = new ImageView(image);
+        derwin.setFitHeight(height/1.6);
+        derwin.setFitWidth(width/2);
+        derwin.setTranslateX(width/3.58);
+        derwin.setTranslateY(height/300);
+        
         //title of the game
         Text title = new Text("Swervin' Derwin");
         title.setFont(Font.font("Courier", FontWeight.BOLD, FontPosture.REGULAR, 100));
@@ -129,9 +86,7 @@ public class MainMenu extends Application {
         buttons.setTranslateX(820);
         buttons.setTranslateY(750);
 
-        pane.getChildren().addAll(hands, leftArm, rightArm, torso, leftLeg, rightLeg, leftFoot, rightFoot, flagPole, flag, eye1, eye2, mouth, mouthCheek1, mouthCheek2);
-        pane.getChildren().add(title);
-        pane.getChildren().add(buttons);
+        pane.getChildren().addAll(derwin, title, buttons);
         pane.setStyle("-fx-background-color: #000000");
 
         menu.setScene(main);
