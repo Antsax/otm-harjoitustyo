@@ -42,7 +42,7 @@ public class MainMenu extends Application {
         Scene main = new Scene(pane, width, height, Color.BLACK);
         
         //face of Derwin
-        Rectangle eye1 = new Rectangle(width/100, 40, Color.BLACK);
+        Rectangle eye1 = new Rectangle(30, 40, Color.BLACK);
         Rectangle eye2 = new Rectangle(30, 40, Color.BLACK);
         Rectangle mouth = new Rectangle(120, 20, Color.BLACK);
         Rectangle mouthCheek1 = new Rectangle(15, 30, Color.BLACK);
