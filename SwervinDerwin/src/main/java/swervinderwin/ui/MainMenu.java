@@ -1,25 +1,12 @@
 package swervinderwin.ui;
 
-import java.awt.GraphicsDevice;
-import java.awt.GraphicsEnvironment;
-import java.util.Optional;
 import javafx.application.Application;
-import javafx.geometry.Pos;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Alert.AlertType;
-import javafx.scene.control.Button;
-import javafx.scene.control.ButtonType;
-import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
-import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
-import javafx.scene.shape.Rectangle;
-import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.scene.text.Font;
@@ -47,20 +34,20 @@ public class MainMenu extends Application {
         //Derwin
         Image image = new Image("File:derwinStill.png");
         ImageView derwin = new ImageView(image);
-        derwin.setFitHeight(height/1.6);
-        derwin.setFitWidth(width/2);
-        derwin.setTranslateX(width/3.3);
-        derwin.setTranslateY(height/100);
+        derwin.setFitHeight(height / 1.6);
+        derwin.setFitWidth(width / 2);
+        derwin.setTranslateX(width / 3.3);
+        derwin.setTranslateY(height / 100);
 
         //title of the game
         Text title = new Text("Swervin' Derwin");
         title.setFont(Font.font("Courier", FontWeight.BOLD, FontPosture.REGULAR, 70));
-        title.setTranslateX(width/9);
-        title.setTranslateY(height/5);
+        title.setTranslateX(width / 9);
+        title.setTranslateY(height / 5);
         title.setFill(Color.WHITE);
 
         //Start, Exit and High Scores -buttons
-        VBox buttons = new MainMenuButtons().getButtons(menu, width, height);
+        VBox buttons = new MainMenuButtons(menu, width, height).getButtons();
 
         pane.getChildren().addAll(derwin, title, buttons);
 

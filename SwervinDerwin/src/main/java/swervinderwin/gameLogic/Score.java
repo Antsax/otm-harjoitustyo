@@ -3,15 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package swervinderwin.objects;
-
-import javafx.scene.paint.Color;
-import javafx.scene.shape.Rectangle;
+package swervinderwin.gameLogic;
 
 /**
  *
  * @author ahommy
  */
-public class Platform {
+public class Score {
     
 }

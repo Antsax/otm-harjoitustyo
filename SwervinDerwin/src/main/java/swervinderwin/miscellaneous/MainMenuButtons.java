@@ -5,6 +5,7 @@ import javafx.geometry.Pos;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
+import javafx.scene.input.KeyCode;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
@@ -19,8 +20,18 @@ import swervinderwin.ui.Map;
  * @author antsax
  */
 public class MainMenuButtons {
+    
+    private Stage menu;
+    private int width;
+    private int height;
 
-    public VBox getButtons(Stage menu, int width, int height) {
+    public MainMenuButtons(Stage menu, int width, int height) {
+        this.menu = menu;
+        this.width = width;
+        this.height = height;
+    }
+
+    public VBox getButtons() {
         VBox buttons = new VBox();
         Button start = new Button("START");
         Button exit = new Button("EXIT");

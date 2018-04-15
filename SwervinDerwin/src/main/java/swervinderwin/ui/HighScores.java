@@ -1,8 +1,5 @@
 package swervinderwin.ui;
 
-import java.awt.GraphicsDevice;
-import java.awt.GraphicsEnvironment;
-import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
@@ -10,8 +7,6 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontPosture;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
-import javafx.scene.text.TextAlignment;
-import javafx.stage.Stage;
 
 /**
  *
