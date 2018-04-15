@@ -12,6 +12,6 @@ import javafx.scene.shape.Rectangle;
  *
  * @author ahommy
  */
-public class Derwin {
+public class Platform {
     
 }

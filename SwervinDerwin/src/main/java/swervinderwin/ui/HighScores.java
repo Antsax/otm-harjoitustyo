@@ -19,9 +19,8 @@ import javafx.stage.Stage;
  */
 public class HighScores {
    
-    GraphicsDevice gd = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
-    int width = gd.getDisplayMode().getWidth();
-    int height = gd.getDisplayMode().getHeight();
+    int width = 1200;
+    int height = 800;
     
     public Scene scene() {
         Pane pane = new Pane();
@@ -35,9 +34,9 @@ public class HighScores {
     
     public Text generateTitle() {
         Text highScores = new Text("Hall of Fame");
-        highScores.setFont(Font.font("Courier", FontWeight.BOLD, FontPosture.REGULAR, 100));
+        highScores.setFont(Font.font("Courier", FontWeight.BOLD, FontPosture.REGULAR, 70));
         highScores.setFill(Color.WHITE);
-        highScores.setTranslateX(width/2.62);
+        highScores.setTranslateX(width/3.2);
         highScores.setTranslateY(height/10);
         return highScores;
     }
