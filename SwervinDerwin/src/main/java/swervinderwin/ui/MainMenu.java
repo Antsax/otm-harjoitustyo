@@ -42,6 +42,7 @@ public class MainMenu extends Application {
         Pane pane = new Pane();
         pane.setPrefSize(width, height);
         Scene main = new Scene(pane, width, height, Color.BLACK);
+        pane.setStyle("-fx-background-color: #000000");
 
         //Derwin
         Image image = new Image("File:derwinStill.png");
@@ -54,8 +55,8 @@ public class MainMenu extends Application {
         //title of the game
         Text title = new Text("Swervin' Derwin");
         title.setFont(Font.font("Courier", FontWeight.BOLD, FontPosture.REGULAR, 100));
-        title.setTranslateX(250);
-        title.setTranslateY(200);
+        title.setTranslateX(width/4);
+        title.setTranslateY(height/5);
         title.setFill(Color.WHITE);
 
         //Start, Exit and High Scores -buttons
@@ -83,11 +84,10 @@ public class MainMenu extends Application {
         buttons.getChildren().addAll(start, highScores, exit);
         buttons.setAlignment(Pos.CENTER);
         buttons.setSpacing(30);
-        buttons.setTranslateX(820);
-        buttons.setTranslateY(750);
+        buttons.setTranslateX(width/2.34);
+        buttons.setTranslateY(height/1.5);
 
         pane.getChildren().addAll(derwin, title, buttons);
-        pane.setStyle("-fx-background-color: #000000");
 
         menu.setScene(main);
         menu.show();
