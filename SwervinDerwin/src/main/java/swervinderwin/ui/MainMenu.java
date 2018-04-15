@@ -54,7 +54,7 @@ public class MainMenu extends Application {
 
         //title of the game
         Text title = new Text("Swervin' Derwin");
-        title.setFont(Font.font("Courier", FontWeight.BOLD, FontPosture.REGULAR, 100));
+        title.setFont(Font.font("Courier", FontWeight.BOLD, FontPosture.REGULAR, 70));
         title.setTranslateX(width/4);
         title.setTranslateY(height/5);
         title.setFill(Color.WHITE);
