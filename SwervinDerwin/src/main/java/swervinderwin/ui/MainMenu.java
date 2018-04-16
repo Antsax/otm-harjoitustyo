@@ -32,7 +32,7 @@ public class MainMenu extends Application {
         pane.setStyle("-fx-background-color: #000000");
 
         //Derwin
-        Image image = new Image("File:derwinStill.png");
+        Image image = new Image("File:animation/derwinStill.png");
         ImageView derwin = new ImageView(image);
         derwin.setFitHeight(height / 1.6);
         derwin.setFitWidth(width / 2);

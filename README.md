@@ -21,3 +21,9 @@ Testikattavuusraportti luodaan komennolla
 `mvn test jacoco:report`
 
 Kattavuusraporttia voi tarkastella selaimella avaamalla tiedosto *target/site/jacoco/index.html*
+
+### Käynnistys
+
+Sovelluksen voi käynnistää suorittamalla komento 
+
+`mvn compile exec:java -Dexec.mainClass=swervinderwin.ui.MainMenu`

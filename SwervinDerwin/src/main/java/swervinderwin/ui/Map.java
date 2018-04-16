@@ -3,7 +3,7 @@ package swervinderwin.ui;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
-import swervinderwin.gameLogic.MovementHandler;
+import swervinderwin.gamelogic.MovementHandler;
 import swervinderwin.miscellaneous.MapCreator;
 import swervinderwin.objects.Derwin;
 
