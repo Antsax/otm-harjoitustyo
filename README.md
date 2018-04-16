@@ -27,3 +27,11 @@ Kattavuusraporttia voi tarkastella selaimella avaamalla tiedosto *target/site/ja
 Sovelluksen voi käynnistää suorittamalla komento 
 
 `mvn compile exec:java -Dexec.mainClass=swervinderwin.ui.MainMenu`
+
+### CheckStyle
+
+Tiedoston [checkstyle.xml](https://github.com/Antsax/otm-harjoitustyo/blob/master/SwervinDerwin/checkstyle.xml) määrittelemät tarkistukset suoritetaan komennolla
+
+`mvn jxr:jxr checkstyle:checkstyle`
+
+Mahdolliset virheilmoitukset selviävät avaamalla selaimella tiedosto *target/site/checkstyle.html*
