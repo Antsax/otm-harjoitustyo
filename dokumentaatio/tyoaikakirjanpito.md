@@ -13,4 +13,5 @@ päivä | aika(h) | mitä tein
 15.4 | 8 | kartan ja liikkumisen logiikan luominen sekä koodin refaktarointi
 16.4 | 4 | lopullinen logiikka liikkumiselle ja checkstyle
 17.4 | 2 | testausta
-yht. | 30.5 | 
+| 1 | pakkausrakenne
+yht. | 31.5 | 

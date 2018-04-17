@@ -8,6 +8,9 @@ Helsingin Yliopiston keväällä 2018 toteutettu **Ohjelmistotekniikan menetelm�
 
 [Työaikakirjanpito](https://github.com/Antsax/otm-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md)
 
+[Arkkitehtuurikuvaus](https://github.com/Antsax/otm-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
+
+
 ## Komentorivitoiminnot
 
 ### Testaus
