@@ -1,11 +1,15 @@
 package swervinderwin.ui;
 
+import java.util.ArrayList;
+import java.util.List;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import swervinderwin.gamelogic.MovementHandler;
 import swervinderwin.miscellaneous.MapCreator;
 import swervinderwin.objects.Derwin;
+import swervinderwin.objects.Enemy;
+import swervinderwin.objects.EnemyCreator;
 
 /**
  *
@@ -24,13 +28,13 @@ public class Map {
         pane.setStyle("-fx-background-color: #000000");
 
         MapCreator mapCreator = new MapCreator(width, height);
-        MovementHandler derwinMovement = new MovementHandler(derwin, map);
-        
+        MovementHandler derwinMovement = new MovementHandler(derwin, map, pane);
+
         mapCreator.originalMap(pane);
         derwinMovement.addMovementHandler();
 
         pane.getChildren().add(derwin.getCharacter());
-        
+
         return map;
     }
 }

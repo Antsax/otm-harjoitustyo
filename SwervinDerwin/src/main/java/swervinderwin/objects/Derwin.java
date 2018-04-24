@@ -18,6 +18,7 @@ public class Derwin extends Character {
 
     @Override
     public void moveRight() {
+        // MAKE FASTER
         if (getCharacter().getTranslateX() < 1155) {
             getCharacter().setTranslateX(getCharacter().getTranslateX() + 1.5);
         }
@@ -25,6 +26,7 @@ public class Derwin extends Character {
 
     @Override
     public void moveLeft() {
+        // MAKE FASTER
         if (getCharacter().getTranslateX() > 0) {
             getCharacter().setTranslateX(getCharacter().getTranslateX() - 1.5);
         }
@@ -32,31 +34,33 @@ public class Derwin extends Character {
 
     @Override
     public void drop() {
+        // REFACTOR AND MAKE FASTER
         if (jumpHeight == 0) {
-            if (y() == 605 && x() > 435 && x() < 720 || (y() == 735) || (y() == 605 && x() > 75 && x() < 360) || (y() == 605 && x() > 795 && x() < 1080)
-                    || (y() == 435 && x() > 315 && x() < 480) || (y() == 435 && x() > 675 && x() < 840) || (y() == 265 && x() > 435 && x() < 720)
-                    || (y() == 265 && x() < 240) || (y() == 265 && x() > 915) || (y() == 95 && x() > 525 && x() < 630)) {
+            if (getY() == 605 && getX() > 435 && getX() < 720 || (getY() == 735) || (getY() == 605 && getX() > 75 && getX() < 360) || (getY() == 605 && getX() > 795 && getX() < 1080)
+                || (getY() == 435 && getX() > 315 && getX() < 480) || (getY() == 435 && getX() > 675 && getX() < 840) || (getY() == 265 && getX() > 435 && getX() < 720)
+                || (getY() == 265 && getX() < 240) || (getY() == 265 && getX() > 915) || (getY() == 95 && getX() > 525 && getX() < 630)) {
                 return;
-            } else if (y() == 0) {
-                getCharacter().setTranslateY(y() + 3);
+            } else if (getY() == 0) {
+                getCharacter().setTranslateY(getY() + 3);
             } else {
-                getCharacter().setTranslateY(y() + 2);
+                getCharacter().setTranslateY(getY() + 2);
             }
         }
     }
 
     @Override
     public void jump() {
-        if (y() == 605 && x() > 435 && x() < 720 || (y() == 735) || (y() == 605 && x() > 75 && x() < 360) || (y() == 605 && x() > 795 && x() < 1080)
-                || (y() == 435 && x() > 315 && x() < 480) || (y() == 435 && x() > 675 && x() < 840) || (y() == 265 && x() > 435 && x() < 720)
-                || (y() == 265 && x() < 240) || (y() == 265 && x() > 915) || (y() == 95 && x() > 525 && x() < 630)) {
+        //REFACTOR AND MAKE FASTER
+        if (getY() == 605 && getX() > 435 && getX() < 720 || (getY() == 735) || (getY() == 605 && getX() > 75 && getX() < 360) || (getY() == 605 && getX() > 795 && getX() < 1080)
+                || (getY() == 435 && getX() > 315 && getX() < 480) || (getY() == 435 && getX() > 675 && getX() < 840) || (getY() == 265 && getX() > 435 && getX() < 720)
+                || (getY() == 265 && getX() < 240) || (getY() == 265 && getX() > 915) || (getY() == 95 && getX() > 525 && getX() < 630)) {
 
             new AnimationTimer() {
                 @Override
                 public void handle(long now) {
-                    getCharacter().setTranslateY(y() - 3);
+                    getCharacter().setTranslateY(getY() - 3);
                     jumpHeight++;
-                    if (jumpHeight > 35 || y() <= 0) {
+                    if (jumpHeight > 35 || getY() <= 0) {
                         jumpHeight = 0;
                         stop();
                     }
@@ -67,19 +71,10 @@ public class Derwin extends Character {
 
     @Override
     public void crouch() {
-        if (y() == 0) {
-            getCharacter().setTranslateY(y() + 3);
+        if (getY() == 0) {
+            getCharacter().setTranslateY(getY() + 3);
         } else if (getCharacter().getTranslateY() < 735) {
             getCharacter().setTranslateY(getCharacter().getTranslateY() + 2);
         }
     }
-
-    public double y() {
-        return getCharacter().getTranslateY();
-    }
-
-    public double x() {
-        return getCharacter().getTranslateX();
-    }
-
 }

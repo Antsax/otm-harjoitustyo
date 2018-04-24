@@ -1,6 +1,7 @@
 package swervinderwin.gamelogic;
 
 import javafx.scene.Scene;
+import javafx.scene.layout.Pane;
 import javafx.scene.shape.Rectangle;
 import org.junit.After;
 import org.junit.AfterClass;
@@ -34,7 +35,8 @@ public class MovementHandlerTest {
     public void setUp() {
         Derwin derwin = new Derwin(1200 / 2 - 22 - 5, 800 - 195);
         Map map = new Map();
-        handler = new MovementHandler(derwin, map.scene());
+        Pane pane = new Pane();
+        handler = new MovementHandler(derwin, map.scene(), pane);
     }
     
     @After

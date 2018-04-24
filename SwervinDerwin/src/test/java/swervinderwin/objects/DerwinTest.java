@@ -49,25 +49,25 @@ public class DerwinTest {
     @Test
     public void moveRight() {
         derwin.moveRight();
-        assertEquals(derwin.x(), xStart + 1.5, 0);
+        assertEquals(derwin.getX(), xStart + 1.5, 0);
     }
     
     @Test
     public void moveLeft() {
         derwin.moveLeft();
-        assertEquals(derwin.x(), xStart - 1.5, 0);
+        assertEquals(derwin.getX(), xStart - 1.5, 0);
     }
     
     @Test
     public void crouch() {
         derwin.crouch();
-        assertFalse(derwin.y() == yStart);
+        assertFalse(derwin.getY() == yStart);
     }
     
     @Test
     public void doesntDropOnStart() {
         derwin.drop();
-        assertEquals(derwin.y(), yStart, 0);
+        assertEquals(derwin.getY(), yStart, 0);
     }
     
     @Test

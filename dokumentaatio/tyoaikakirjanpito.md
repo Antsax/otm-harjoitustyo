@@ -14,4 +14,6 @@ päivä | aika(h) | mitä tein
 16.4 | 4 | lopullinen logiikka liikkumiselle ja checkstyle
 17.4 | 2 | testausta
 | 1 | pakkausrakenne
-yht. | 31.5 | 
+23.4 | 2 | vihollisten luominen
+24.4 | 3 | viholliset liikkuvat, testausta, sekvenssikaavio
+yht. | 36.5 | 

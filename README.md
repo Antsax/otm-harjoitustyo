@@ -10,6 +10,9 @@ Helsingin Yliopiston keväällä 2018 toteutettu **Ohjelmistotekniikan menetelm�
 
 [Arkkitehtuurikuvaus](https://github.com/Antsax/otm-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
+## Releaset
+
+
 
 ## Komentorivitoiminnot
 
@@ -37,4 +40,16 @@ Tiedoston [checkstyle.xml](https://github.com/Antsax/otm-harjoitustyo/blob/maste
 
 `mvn jxr:jxr checkstyle:checkstyle`
 
-Mahdolliset virheilmoitukset selviävät avaamalla selaimella tiedosto *target/site/checkstyle.html*
+Mahdolliset virheilmoitukset selviävät avaamalla selaimella tiedoston *target/site/checkstyle.html*
+
+### Suoritettavan jarin generointi
+
+Komennolla 
+
+`mvn package` 
+
+generoidaan hakemistoon *target* suoritettava jar-tiedosto *SwervinDerwin-1.0-SNAPSHOT.jar*. Komento
+
+`java -jar SwervinDerwin-1.0-SNAPSHOT.jar`
+
+käynnistää ohjelman.
