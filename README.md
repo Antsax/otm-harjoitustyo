@@ -12,7 +12,7 @@ Helsingin Yliopiston keväällä 2018 toteutettu **Ohjelmistotekniikan menetelm�
 
 ## Releaset
 
-
+[1 release](https://github.com/Antsax/otm-harjoitustyo/releases/tag/release1)
 
 ## Komentorivitoiminnot
 
