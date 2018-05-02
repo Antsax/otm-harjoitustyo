@@ -19,4 +19,5 @@ päivä | aika(h) | mitä tein
 30.4| 1 | refaktarointia
 1.4 | 7 | pelin logiikan laajentaminen
 2.4 | 3 | testausta ja refaktarointia
-yht. | 47.5 | 
+2.4 | 2 | JavaDoc ja käyttöohje
+yht. | 48.5 | 
