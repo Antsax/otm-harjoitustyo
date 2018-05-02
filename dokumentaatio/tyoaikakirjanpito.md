@@ -20,4 +20,5 @@ päivä | aika(h) | mitä tein
 1.4 | 7 | pelin logiikan laajentaminen
 2.4 | 3 | testausta ja refaktarointia
 2.4 | 2 | JavaDoc ja käyttöohje
-yht. | 48.5 | 
+2.4 | 2 | arkkitehtuurikuvaus
+yht. | 50.5 | 
