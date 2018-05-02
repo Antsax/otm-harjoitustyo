@@ -13,7 +13,7 @@ päivä | aika(h) | mitä tein
 15.4 | 8 | kartan ja liikkumisen logiikan luominen sekä koodin refaktarointi
 16.4 | 4 | lopullinen logiikka liikkumiselle ja checkstyle
 17.4 | 2 | testausta
-| 1 | pakkausrakenne
+17.4 | 1 | pakkausrakenne
 23.4 | 2 | vihollisten luominen
 24.4 | 3 | viholliset liikkuvat, testausta, sekvenssikaavio
 30.4| 1 | refaktarointia
