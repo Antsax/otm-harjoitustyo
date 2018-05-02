@@ -5,8 +5,8 @@ import javafx.scene.shape.Rectangle;
 import swervinderwin.objects.PlatformCreator;
 
 /**
- *
- * @author ahommy
+ * Creates the map in which the game is to be played
+ * 
  */
 public class MapCreator {
 
@@ -18,6 +18,11 @@ public class MapCreator {
         this.width = width;
     }
 
+    /**
+     * Creates the original map of the game. The method adds the platforms to the pane once created.
+     * 
+     * @param pane  the pane in which the platforms are drawn
+     */
     public void originalMap(Pane pane) {
         PlatformCreator platCreat = new PlatformCreator(width, height);
 

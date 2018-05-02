@@ -1,5 +1,6 @@
 package swervinderwin.objects;
 
+import javafx.scene.paint.Color;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -28,7 +29,8 @@ public class EnemyTest {
 
     @Before
     public void setUp() {
-        this.enemy = new Enemy(-60, 200);
+        Derwin derwin = new Derwin(45, 45);
+        this.enemy = new Enemy(-60, 200, derwin);
     }
 
     @After
@@ -55,5 +57,18 @@ public class EnemyTest {
     public void sideIsLeft() {
         enemy.setLeft();
         assertEquals(enemy.side(), "left");
+    }
+    
+    @Test
+    public void givesDerwin() {
+        Derwin derwin = enemy.getDerwin();
+        assertNotNull(derwin);
+    }
+    
+    @Test
+    public void collision() {
+        Derwin collisionDerwin = new Derwin(45,45);
+        Enemy collisionEnemy = new Enemy(45, 45, collisionDerwin);
+        assertTrue(collisionEnemy.collision(collisionDerwin));
     }
 }

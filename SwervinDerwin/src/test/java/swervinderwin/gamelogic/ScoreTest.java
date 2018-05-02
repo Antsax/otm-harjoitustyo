@@ -13,6 +13,8 @@ import static org.junit.Assert.*;
  */
 public class ScoreTest {
     
+    Score score;
+    
     public ScoreTest() {
     }
     
@@ -26,9 +28,21 @@ public class ScoreTest {
     
     @Before
     public void setUp() {
+        score = new Score();
     }
     
     @After
     public void tearDown() {
+    }
+    
+    @Test
+    public void scoreExists() {
+        assertNotNull(score);
+    }
+    
+    @Test
+    public void scoreRises() {
+        score.raiseScore();
+        assertEquals(score.getScore(), 1);
     }
 }

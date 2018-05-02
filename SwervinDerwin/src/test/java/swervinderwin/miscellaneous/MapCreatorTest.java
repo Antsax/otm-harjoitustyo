@@ -1,5 +1,6 @@
 package swervinderwin.miscellaneous;
 
+import javafx.scene.layout.Pane;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -38,5 +39,13 @@ public class MapCreatorTest {
     @Test
     public void creatorCreated() {
         assertNotNull(creator);
+    }
+    
+    @Test
+    public void platformsAddedToPane() {
+        Pane pane = new Pane();
+        pane.setPrefSize(1200, 800);
+        creator.originalMap(pane);
+        assertFalse(pane.getChildren().isEmpty());
     }
 }

@@ -22,10 +22,25 @@ public class MainMenu extends Application {
 
     int width = 1200;
     int height = 800;
+    
+    public MainMenu() {
+        
+    }
 
     @Override
     public void start(Stage menu) {
         menu.setTitle("Swervin' Derwin!");
+        Scene main = scene(menu);
+
+        menu.setScene(main);
+        menu.show();
+    }
+
+    public static void main(String[] args) {
+        launch(MainMenu.class);
+    }
+
+    public Scene scene(Stage menu) {
         Pane pane = new Pane();
         pane.setPrefSize(width, height);
         Scene main = new Scene(pane, width, height, Color.BLACK);
@@ -51,11 +66,6 @@ public class MainMenu extends Application {
 
         pane.getChildren().addAll(derwin, title, buttons);
 
-        menu.setScene(main);
-        menu.show();
-    }
-
-    public static void main(String[] args) {
-        launch(MainMenu.class);
+        return main;
     }
 }

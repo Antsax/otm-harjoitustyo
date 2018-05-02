@@ -10,6 +10,8 @@ Helsingin Yliopiston keväällä 2018 toteutettu **Ohjelmistotekniikan menetelm�
 
 [Arkkitehtuurikuvaus](https://github.com/Antsax/otm-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
+[Käyttöohje](https://github.com/Antsax/otm-harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
+
 ## Releaset
 
 
@@ -53,3 +55,10 @@ generoidaan hakemistoon *target* suoritettava jar-tiedosto *SwervinDerwin-1.0-SN
 `java -jar SwervinDerwin-1.0-SNAPSHOT.jar`
 
 käynnistää ohjelman.
+
+
+### JavaDocin generointi
+
+JavaDocin saa generoitua komentoriviltä komennolla
+
+`mvn javadoc:javadoc`

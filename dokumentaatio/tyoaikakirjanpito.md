@@ -16,4 +16,7 @@ päivä | aika(h) | mitä tein
 | 1 | pakkausrakenne
 23.4 | 2 | vihollisten luominen
 24.4 | 3 | viholliset liikkuvat, testausta, sekvenssikaavio
-yht. | 36.5 | 
+30.4| 1 | refaktarointia
+1.4 | 7 | pelin logiikan laajentaminen
+2.4 | 3 | testausta ja refaktarointia
+yht. | 47.5 | 

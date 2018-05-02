@@ -5,6 +5,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 import javafx.stage.Stage;
 import swervinderwin.ui.HighScores;
+import swervinderwin.ui.MainMenu;
 import swervinderwin.ui.Map;
 
 /**
@@ -39,6 +40,14 @@ public class SceneSwitcher {
     public static void switchToMap(Stage window, Map map) {
         try {
             window.setScene(map.scene());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    
+    public static void switchToMenu(Stage window, MainMenu mainMenu) {
+        try {
+            window.setScene(mainMenu.scene(window));
         } catch (Exception e) {
             e.printStackTrace();
         }

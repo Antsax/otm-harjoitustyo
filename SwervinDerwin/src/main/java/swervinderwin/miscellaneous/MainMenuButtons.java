@@ -1,11 +1,7 @@
 package swervinderwin.miscellaneous;
 
-import java.util.Optional;
 import javafx.geometry.Pos;
-import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
-import javafx.scene.control.ButtonType;
-import javafx.scene.input.KeyCode;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
@@ -17,7 +13,7 @@ import swervinderwin.ui.Map;
 
 /**
  *
- * @author antsax
+ * Class which creates the buttons EXIT, START and HIGHSCORES with their corresponding actions
  */
 public class MainMenuButtons {
     
@@ -31,6 +27,11 @@ public class MainMenuButtons {
         this.height = height;
     }
 
+    /**
+     * Method returns a VBox which contains the buttons, their transitions and the actions of the buttons
+     * 
+     * @return buttons in VBox
+     */
     public VBox getButtons() {
         VBox buttons = new VBox();
         Button start = new Button("START");
@@ -42,7 +43,7 @@ public class MainMenuButtons {
         start.setFont(Font.font(30));
 
         highScores.setOnAction((event) -> {
-            switchToHighScores(menu, new HighScores());
+            switchToHighScores(menu, new HighScores(menu));
         });
 
         exit.setOnAction((event) -> {
@@ -50,7 +51,7 @@ public class MainMenuButtons {
         });
 
         start.setOnAction((event) -> {
-            switchToMap(menu, new Map());
+            switchToMap(menu, new Map(menu));
         });
 
         buttons.getChildren().addAll(start, highScores, exit);
